@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Cabibe</string>
+    <string name="app_description">A mobile application that can show the location of a certain restaurant.
+        The user can also see the descriptions and menus of the restaurant.</string>
+    
+    <string name="main_title">Caloocan Bistro and Beanery</string>
+    <string name="about_us">About Us</string>
+    
+    <string name="google_maps_key">AIzaSyAIJ2RavSB4rkbjDLmJLEmjZSylHArq6Ao</string>
+    
+    <string name="member_bernabe">Bernabe, Josnah Mhay</string>
+    <string name="member_calimag">Calimag, Francis</string>
+    <string name="member_dela_cruz">Dela Cruz, Ericka Jane</string>
+    <string name="member_delesmo">Delesmo, Kenneth</string>
+    <string name="member_tiglao">Tiglao, Mary Grace</string>
+
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac tempor lectus.
+        Ut placerat, tellus at lacinia lacinia, eros urna cursus ligula, tincidunt lacinia mi enim malesuada neque. </string>
+</resources>

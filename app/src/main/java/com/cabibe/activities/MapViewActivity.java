@@ -21,7 +21,9 @@ import android.text.Html;
 import android.view.View;
 
 import com.cabibe.R;
+import com.cabibe.data.RestaurantFeeder;
 import com.cabibe.databinding.ActivityMapViewBinding;
+import com.cabibe.models.Restaurant;
 import com.cabibe.utils.Constants;
 import com.cabibe.utils.LocationUtils;
 import com.google.android.gms.common.ConnectionResult;
@@ -160,8 +162,9 @@ public class MapViewActivity
         map = googleMap;
         if (map != null) {
 
-            LatLng caloocanLatLng = new LatLng(14.7566, 121.0450);
+            LatLng caloocanLatLng = new LatLng(14.6581, 120.9756);
             map.animateCamera(CameraUpdateFactory.newLatLngZoom(caloocanLatLng, 14), 3000, null);
+            setupLatLng(map);
 
             if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                 if (ContextCompat.checkSelfPermission(this,
@@ -230,6 +233,14 @@ public class MapViewActivity
                 }
                 return;
             }
+        }
+    }
+
+    private void setupLatLng(GoogleMap map) {
+        for(Restaurant restau : RestaurantFeeder.getRestaurants()) {
+            LatLng restaurant = new LatLng(restau.latitude, restau.longitude);
+            map.addMarker(new MarkerOptions().position(restaurant)
+                    .title(restau.name));
         }
     }
 

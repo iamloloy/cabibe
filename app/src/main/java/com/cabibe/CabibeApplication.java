@@ -7,6 +7,8 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.multidex.MultiDex;
 
+import com.cabibe.utils.TypeFaceUtil;
+
 /**
  * Created by ekxia on 5/2/2018.
  */
@@ -21,6 +23,7 @@ public class CabibeApplication
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP)
             MultiDex.install(this);
 
+        TypeFaceUtil.overrideFont(getApplicationContext(), "SERIF", "fonts/BebasNeue-Regular.tff");
         registerActivityLifecycleCallbacks(
                 new ActivityLifecycleCallbacks() {
                     @Override

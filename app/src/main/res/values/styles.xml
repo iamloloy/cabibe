@@ -10,12 +10,13 @@
 
     <style name="Theme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/orange</item>
-        <item name="colorPrimaryDark">@color/blue</item>
+        <item name="colorPrimaryDark">@color/light_gray</item>
         <item name="colorAccent">@color/purple</item>
-        <item name="android:textColor">@color/blue</item>
-        <item name="android:textColorPrimary">@color/blue</item>
-        <item name="android:textColorSecondary">@color/blue</item>
+        <item name="android:textColor">@color/light_gray</item>
+        <item name="android:textColorPrimary">@color/light_gray</item>
+        <item name="android:textColorSecondary">@color/light_gray</item>
         <item name="android:windowDisablePreview">true</item>
+        <item name="android:typeface">serif</item>
     </style>
 
     <style name="Theme.ToolBarStyle" parent="Theme.AppCompat.Light.NoActionBar">
@@ -26,5 +27,7 @@
         <item name="android:textColorSecondary">@color/white</item>
         <item name="actionMenuTextColor">@color/white</item>
         <item name="android:windowDisablePreview">true</item>
+        <item name="android:typeface">serif</item>
     </style>
+
 </resources>
